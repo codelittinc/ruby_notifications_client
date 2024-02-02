@@ -1,0 +1,125 @@
+---
+http_interactions:
+- request:
+    method: patch
+    uri: https://api.notifications.codelitt.dev/channel_messages/1630763878.000100
+    body:
+      encoding: UTF-8
+      string: '{"message":"i''m batman","channel":"feed-test-automations","ts":"1630763878.000100"}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Authorization:
+      - "<AUTHENTICATION_KEY>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty/1.15.8.2
+      Date:
+      - Sat, 04 Sep 2021 14:18:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Etag:
+      - W/"09a10cb3b1abbd6c390c7120a09cb6ff"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f2961f5056f0ca5b99b620b2c3dcc70f
+      X-Runtime:
+      - '1.059745'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ok":true,"channel":"CRXH3U8PK","ts":"1630763878.000100","text":"i''m
+        batman","message":{"bot_id":"BSW6NEU5N","type":"message","text":"i''m batman","user":"USYCS7QHL","team":"T029Q9LHJ","bot_profile":{"id":"BSW6NEU5N","deleted":false,"name":"RoadRunner","updated":1579627251,"app_id":"ASVNL9492","icons":{"image_36":"https://avatars.slack-edge.com/2020-01-20/901740758338_7de919de0c79c2b1b800_36.jpg","image_48":"https://avatars.slack-edge.com/2020-01-20/901740758338_7de919de0c79c2b1b800_48.jpg","image_72":"https://avatars.slack-edge.com/2020-01-20/901740758338_7de919de0c79c2b1b800_72.jpg"},"team_id":"T029Q9LHJ"},"edited":{"user":"BSW6NEU5N","ts":"1630765098.000000"}}}'
+  recorded_at: Sat, 04 Sep 2021 14:18:35 GMT
+- request:
+    method: patch
+    uri: https://api.notifications.codelitt.dev/channel_messages/1630766885.002600
+    body:
+      encoding: UTF-8
+      string: '{"message":"i''m batman","channel":"feed-test-automations","ts":"1630766885.002600"}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Authorization:
+      - "<AUTHENTICATION_KEY>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty/1.15.8.2
+      Date:
+      - Sat, 04 Sep 2021 14:48:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Etag:
+      - W/"534eff4aee0c3e4955d6a782ce8f9a07"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - cc7ee4eba1293d9c0822daa1e6d5829e
+      X-Runtime:
+      - '1.086967'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ok":true,"channel":"CRXH3U8PK","ts":"1630766885.002600","text":"i''m
+        batman","message":{"bot_id":"BSW6NEU5N","type":"message","text":"i''m batman","user":"USYCS7QHL","team":"T029Q9LHJ","bot_profile":{"id":"BSW6NEU5N","deleted":false,"name":"RoadRunner","updated":1579627251,"app_id":"ASVNL9492","icons":{"image_36":"https://avatars.slack-edge.com/2020-01-20/901740758338_7de919de0c79c2b1b800_36.jpg","image_48":"https://avatars.slack-edge.com/2020-01-20/901740758338_7de919de0c79c2b1b800_48.jpg","image_72":"https://avatars.slack-edge.com/2020-01-20/901740758338_7de919de0c79c2b1b800_72.jpg"},"team_id":"T029Q9LHJ"}}}'
+  recorded_at: Sat, 04 Sep 2021 14:48:44 GMT
+recorded_with: VCR 6.0.0

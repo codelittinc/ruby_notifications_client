@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.notifications.codelitt.dev/reactions
+    body:
+      encoding: UTF-8
+      string: '{"reaction":"scream","channel":"feed-test-automations","ts":"1630765245.000700"}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Authorization:
+      - "<AUTHENTICATION_KEY>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty/1.15.8.2
+      Date:
+      - Sat, 04 Sep 2021 14:49:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Etag:
+      - W/"4062edaf750fb8074e7e83e0c9028c94"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1e32ac80b2f7d48195bbeb25a25fd9c5
+      X-Runtime:
+      - '3.127360'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ok":true}'
+  recorded_at: Sat, 04 Sep 2021 14:49:49 GMT
+recorded_with: VCR 6.0.0

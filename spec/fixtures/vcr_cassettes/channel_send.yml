@@ -1,0 +1,108 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.roadrunner.codelitt.dev/channel_messages
+    body:
+      encoding: UTF-8
+      string: '{"bot":null,"message":"123","channel":"123","ts":"123","uniq":false}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Authorization:
+      - "<AUTHENTICATION_KEY>"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - openresty/1.15.8.2
+      Date:
+      - Sat, 04 Sep 2021 13:45:44 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '34'
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Request-Id:
+      - 597e97ca268489afac3d32fd4ee44f16
+      X-Runtime:
+      - '0.003677'
+      Vary:
+      - Origin
+    body:
+      encoding: UTF-8
+      string: '{"status":404,"error":"Not Found"}'
+  recorded_at: Sat, 04 Sep 2021 13:45:44 GMT
+- request:
+    method: post
+    uri: https://api.notifications.codelitt.dev/channel_messages
+    body:
+      encoding: UTF-8
+      string: '{"message":"123","channel":"feed-test-automations","ts":null,"uniq":false}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Authorization:
+      - "<AUTHENTICATION_KEY>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty/1.15.8.2
+      Date:
+      - Sat, 04 Sep 2021 19:05:30 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Etag:
+      - W/"ef8992969eec41268cacfacab2477af5"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - '0873ca36cb3577420ed204b90e68a704'
+      X-Runtime:
+      - '0.290979'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"notification_id":"8152"}'
+  recorded_at: Sat, 04 Sep 2021 19:05:31 GMT
+recorded_with: VCR 6.0.0

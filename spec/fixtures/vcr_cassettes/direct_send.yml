@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.notifications.codelitt.dev/direct_messages
+    body:
+      encoding: UTF-8
+      string: '{"message":"123","username":"kaiomagalhaes","uniq":false}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Authorization:
+      - "<AUTHENTICATION_KEY>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty/1.15.8.2
+      Date:
+      - Sat, 04 Sep 2021 19:07:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Etag:
+      - W/"e607ed6c2ca5371cb46bff5858fb9266"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - '049af121e9f17627b42fc2bea1d04d12'
+      X-Runtime:
+      - '0.302750'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"notification_id":"8172"}'
+  recorded_at: Sat, 04 Sep 2021 19:07:05 GMT
+recorded_with: VCR 6.0.0
