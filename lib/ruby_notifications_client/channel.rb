@@ -5,7 +5,7 @@ require "ruby_notifications_client/notifications_client"
 module RubyNotificationsClient
   class Channel < NotificationsClient
     def list
-      Request.get("#{@url}/api/channels", authorization)
+      RubyNotificationsClient::Request.get("#{@url}/api/channels", authorization)
     end
 
     def send(message, channel, notification_id = nil, uniq = false)
@@ -19,7 +19,7 @@ module RubyNotificationsClient
 
     def update(message, channel, notification_id)
       url = build_url("/channel_messages/#{notification_id}")
-      response = Request.patch(url, authorization, {
+      response = RubyNotificationsClient::Request.patch(url, authorization, {
                                  message:,
                                  channel:,
                                  notification_id:

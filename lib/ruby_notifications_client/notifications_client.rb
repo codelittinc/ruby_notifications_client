@@ -19,7 +19,7 @@ module RubyNotificationsClient
 
     def request(path, body)
       url = build_url(path)
-      response = Request.post(url, authorization, body)
+      response = RubyNotificationsClient::Request.post(url, authorization, body)
       JSON.parse(response.body) if response&.body
     end
   end
